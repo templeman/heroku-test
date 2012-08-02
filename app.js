@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('Hello World!');
+  response.send('<!DOCTYPE HTML><html><h1>Hello World!</h1></html>');
 });
 
 app.get('/user/:id', function(request, response) {
