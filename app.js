@@ -7,7 +7,7 @@ app.get('/', function(request, response) {
 });
 
 app.get('/user/:id', function(request, response) {
-	res.send('[{ "user" : req.params.id }]');
+	response.send('[{ "user" : request.params.id }]');
 });
 
 var port = process.env.PORT || 5000;
